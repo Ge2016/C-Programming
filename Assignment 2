@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <strings.h>
 
-/* Ge Xiong - Assignment 2 - 4.5.2020*/
+/* Ge Xiong - Assignment 2 - 4.5.2020 */
+/* Create a C program that sorts a sequence of positive numbers using the bubble sort algorithm in an increasing or decreasing order based on the user's choice. */
 
 void swap(int *x, int *y);
 void input(int A[100], int n);
