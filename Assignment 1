@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* Ge Xiong . ICS 365 . Programming Assignment 1 */
+/*Testing whether two sequences of positive numbers are order equivalent*/
+
+int sequenceA(int a[100]);
+int sequenceB(int a[100], int n);
+
+int main() {
+	//stores user inputs, max of 100 integers 
+	int input[100];
+	int n, result;
+
+	printf("Enter the array integers:\n");
+	printf("Enter -100 to end\n");
+
+	n = sequenceA(input);
+	result = sequenceB(input, n);
+	if (result == 1)
+		printf("The sequences are order equivalent.");
+
+	else
+		printf("The sequences are not order equivalent.");
+
+	return 0;
+}
+
+int sequenceA(int a[100]){
+	int i = 0, num = 0;
+	//collects the user input
+	while (1){
+		scanf("%d", &num);
+		//end the user input with -100
+		if (num == -100){
+			break;
+			a[i] = num;
+			i++;
+		}	
+	}
+	return i;
+}
+
+int sequenceB(int a[100], int n){
+	int i, j;
+	//checks for order equivalence 
+	for(i = 0; i < (n/2)-1; i++){
+		for(j = i+1; j < n/2; j++){
+			if(a[i+n/2] > a[j+n/2]){
+				if(a[i] < a[j])
+					return 0;
+			}
+			if(a[i+n/2] < a[j+n/2]){
+				if(a[i] > a[j])
+					return 0;
+			}
+		}
+	}
+	return 1;
+}
+
+
+
+
