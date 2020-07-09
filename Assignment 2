@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <strings.h>
 
-/* Ge Xiong - Assignment 2*/
+/* Ge Xiong - Assignment 2 - 4.5.2020*/
 
 void swap(int *x, int *y);
 void input(int A[100], int n);
