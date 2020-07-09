@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Ge Xiong . ICS 365 . Programming Assignment 1 */
+/* Ge Xiong - Assignment 1 - 2.19.2020 */
 /*Testing whether two sequences of positive numbers are order equivalent*/
 
 int sequenceA(int a[100]);
